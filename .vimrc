@@ -14,7 +14,7 @@ if (has("termguicolors"))
         set termguicolors
 endif
 
-set listchars=tab:·\ ,eol:$,trail:\
+set listchars=tab:·\ ,eol:$,trail:\ ,
 set list
 set tabstop=4
 set shiftwidth=4
