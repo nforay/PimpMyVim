@@ -14,7 +14,7 @@ if (has("termguicolors"))
         set termguicolors
 endif
 
-set listchars=tab:·\ ,eol:$,trail:\ ,
+set listchars=tab:→\ ,eol:$
 set list
 set tabstop=4
 set shiftwidth=4
@@ -23,8 +23,15 @@ set colorcolumn=80
 set noshowmode
 set laststatus=2
 set shortmess=F
-set nu
+set number relativenumber
+
 syntax on
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 let g:lightline = {
     \ 'colorscheme': 'onedark',
