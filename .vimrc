@@ -19,7 +19,7 @@ set list
 set tabstop=4
 set shiftwidth=4
 set cursorline
-set colorcolumn=80
+set colorcolumn=81
 set noshowmode
 set laststatus=2
 set shortmess=F
