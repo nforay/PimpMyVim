@@ -24,6 +24,8 @@ set noshowmode
 set laststatus=2
 set shortmess=F
 set number relativenumber
+set mouse=a
+set hls
 
 syntax on
 
